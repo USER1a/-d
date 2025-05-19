@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z-FLARE CONNECTION PROCEEDING</title>
+  <link rel="stylesheet" href="/src/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="particles-js"></div>
+  
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-text">Z-FLARE</div>
+        <div class="logo-badge">SECURITY</div>
+      </div>
+    </header>
+
+    <main>
+      <div class="verification-box">
+        <h1>CONNECTION PROCEEDING</h1>
+        <div class="cube-container">
+          <div id="3d-cube"></div>
+        </div>
+        
+        <div class="status-container">
+          <div class="status-text">Initializing security protocol...</div>
+          <div id="typed-output"></div>
+        </div>
+        
+        <div class="progress-container">
+          <div class="progress-bar">
+            <div class="progress-fill"></div>
+          </div>
+          <div class="progress-percentage">0%</div>
+        </div>
+        
+        <div class="verification-steps">
+          <div class="step active" data-step="1">
+            <div class="step-indicator">
+              <div class="step-icon"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-title">Initializing Protocol</div>
+              <div class="step-description">Establishing secure connection</div>
+            </div>
+          </div>
+          
+          <div class="step" data-step="2">
+            <div class="step-indicator">
+              <div class="step-icon"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-title">Verifying Identity</div>
+              <div class="step-description">Analyzing digital fingerprint</div>
+            </div>
+          </div>
+          
+          <div class="step" data-step="3">
+            <div class="step-indicator">
+              <div class="step-icon"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-title">Securing Channel</div>
+              <div class="step-description">Encrypting data pathway</div>
+            </div>
+          </div>
+          
+          <div class="step" data-step="4">
+            <div class="step-indicator">
+              <div class="step-icon"></div>
+            </div>
+            <div class="step-content">
+              <div class="step-title">Granting Access</div>
+              <div class="step-description">Forwarding to destination</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer>
+      <div class="footer-text">Z-FLARE SECURITY PROTOCOL v2.5.7</div>
+      <div class="footer-id">ID: <span id="session-id"></span></div>
+    </footer>
+  </div>
+
+  <!-- Digital rain canvas for background effect -->
+  <canvas id="digital-rain"></canvas>
+
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
